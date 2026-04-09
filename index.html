@@ -261,8 +261,8 @@
         }
         .axis-top { grid-column:2; grid-row:1; color: #ff6b6b; text-shadow: 0 0 12px rgba(255,107,107,0.6); padding-bottom: 2px; }
         .axis-bottom { grid-column:2; grid-row:3; color: #74c0fc; text-shadow: 0 0 12px rgba(116,192,252,0.6); padding-top: 2px; }
-        .axis-left { grid-column:1; grid-row:2; writing-mode:vertical-lr; color: #51cf66; text-shadow: 0 0 12px rgba(81,207,102,0.6); padding-right: 3px; }
-        .axis-right { grid-column:3; grid-row:2; writing-mode:vertical-rl; color: #ffd43b; text-shadow: 0 0 12px rgba(255,212,59,0.6); padding-left: 3px; }
+        .axis-left { grid-column:1; grid-row:2; writing-mode:horizontal-tb; transform: rotate(-90deg); color: #51cf66; text-shadow: 0 0 12px rgba(81,207,102,0.6); padding-right: 3px; }
+        .axis-right { grid-column:3; grid-row:2; writing-mode:horizontal-tb; transform: rotate(90deg); color: #ffd43b; text-shadow: 0 0 12px rgba(255,212,59,0.6); padding-left: 3px; }
 
         /* 四象限网格 */
         .matrix-grid {
@@ -796,9 +796,14 @@
         @media (max-width: 380px) {
             .search-wrap { display: none; }
             .brand-text p { display: none; }
-            .axis-label { font-size: 0.6rem; letter-spacing: 2px; }
-            .q-info span { display: none; }
+            .axis-label { font-size: 0.55rem; letter-spacing: 1px; }
+            .q-info span { font-size: 0.5rem; display: block; line-height: 1.1; }
             .task-text { font-size: 0.68rem; }
+            .matrix-wrap { grid-template-columns: 18px 1fr 18px; grid-template-rows: 18px 1fr 18px; }
+            .quadrant-header { padding: 5px 6px 4px; }
+            .q-icon { width: 20px; height: 20px; font-size: 0.75rem; }
+            .q-info h3 { font-size: 0.65rem; }
+            .q-count { padding: 1px 4px; font-size: 0.6rem; min-width: 16px; }
         }
         @media (max-height: 620px) {
             .header { padding: 6px 12px; }
