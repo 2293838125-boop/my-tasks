@@ -1,0 +1,41 @@
+{
+  "name": "时间管理四象限",
+  "short_name": "四象限",
+  "description": "基于艾森豪威尔矩阵的时间管理工具，科学规划，高效执行",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f0f1a",
+  "theme_color": "#7c6fe0",
+  "lang": "zh-CN",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "重要紧急",
+      "short_name": "🔥 Q1",
+      "description": "快速添加重要紧急任务",
+      "url": "./index.html#q1"
+    },
+    {
+      "name": "重要不紧急",
+      "short_name": "🎯 Q2",
+      "description": "快速添加重要不紧急任务",
+      "url": "./index.html#q2"
+    }
+  ]
+}
